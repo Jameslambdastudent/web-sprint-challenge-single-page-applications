@@ -1,11 +1,19 @@
 import React from "react";
+import FormList from "./components/FormList";
+import NavBar from "./components/NavBar";
+
 
 const App = () => {
+  
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
-  );
+    <div>
+        <NavBar />
+       <FormList />
+
+       
+      
+      </div>
+  )
 };
+  
 export default App;
