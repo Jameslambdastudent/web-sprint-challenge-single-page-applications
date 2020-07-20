@@ -1,21 +1,20 @@
-import React from "react"
+import React, { Component } from 'react'
+import { blue300 } from 'material-ui/styles/colors'
+import { Link } from 'react-router-dom'
 
-function HomePage() {
-    return(
-    <div>
-        <div>
+ class HomePage extends Component {
+    render() {
+        return (
+            <div>
+                <h1 style={{ color: blue300}}>WELCOME TO LAMBDA EATZ</h1>
+                <Link to="/formInputs" className="waves-effect waves-light btn-large">Order Pizza</Link>
+            </div>
+        )
+                    
         
-         <h1 className="header"> Your favorite food, delivered while coding!</h1>
-         <button>Pizza</button>
-        </div>
-        <div>
-            <img></img>
-        </div>
-    </div>
-
-
-     
-    )
+            
+        
+    }
 }
 
 export default HomePage

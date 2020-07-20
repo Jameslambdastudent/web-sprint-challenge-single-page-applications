@@ -1,19 +1,26 @@
-import React from "react"
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
-
-function NavBar() {
-    return(
-        <nav className="blue">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">PizzaBite</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="badges.html">Order</a></li>
-        
-      </ul>
-    </div>
-  </nav>
-    )
+export class NavBar extends Component {
+    render() {
+        return (
+ <nav className="cyan">
+  <div className="nav-wrapper">
+    <Link to="/" href="#" className="brand-logo">Lambda-Eatz</Link>
+    <ul id="nav-mobile" className="right hide-on-med-and-down">
+     <li>
+     <Link to="/">Home</Link>
+      </li>
+      
+      <li>
+      <Link to="/formInputs">Order</Link>
+      </li>
+    </ul>
+  </div>
+</nav>
+      
+        )
+    }
 }
 
 export default NavBar
